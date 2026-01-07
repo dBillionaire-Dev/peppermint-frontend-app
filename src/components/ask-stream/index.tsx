@@ -10,30 +10,38 @@ export const Dashboard: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto space-y-10">
       {/* Header Section */}
-      <div className="flex flex-col lg:items-center justify-between gap-6  border-b border-gray-200 lg:pb-15 mb-0">
-        <div>
+      <div className="flex flex-col lg:items-center justify-between md:justify-center gap-20  border-b border-gray-200 lg:pb-15 mb-0 min-h-[80vh]">
+        <div className='lg:pt-15 lg:pr-70'>
           <h1 className="text-5xl lg:text-7xl font-bold text-indigo-600 tracking-tight leading-none mb-2">Ask Stream</h1>
-          <p className="text-4xl lg:text-6xl font-light text-gray-300 italic">lorem ipsum</p>
+          <p className="text-4xl lg:text-6xl font-bold text-gray-300">lorem ipsum</p>
         </div>
         
-        <div className="w-full lg:max-w-xl relative">
-          <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
-            <Icon name="search" className="text-gray-400 w-5 h-5" />
+      <div className="w-full max-w-2xl px-4 pb-20 mb-5">
+        <div className="bg-white rounded-2xl border border-gray-200 drop-shadow-sm shadow-indigo-100/30 p-4 flex flex-col gap-4 relative w-full focus-within:ring-2 focus-within:ring-indigo-100 transition-all">
+          
+          <div className="relative w-full">
+            <Icon
+              name="search"
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5 pointer-events-none"
+            />
+            <input
+              type="text"
+              placeholder="Ask anything"
+              className="w-full pl-10 pr-4 py-2 text-base text-gray-600 outline-none placeholder-gray-400 font-medium rounded-lg"
+            />
           </div>
-          <input 
-            type="text" 
-            placeholder="Ask anything..." 
-            className="w-full bg-white border border-gray-200 rounded-2xl py-5 pl-12 pr-32 focus:outline-none focus:ring-2 focus:ring-indigo-100 shadow-sm transition-all"
-          />
-          <div className="absolute right-2 inset-y-2 flex items-center space-x-3 pr-2">
-            <span className="hidden sm:inline-block text-[10px] font-bold text-indigo-400 bg-indigo-50 px-2 py-1 rounded-md">
-              Beta • Conversational Analytics
-            </span>
-            <button className="bg-gray-400 hover:bg-indigo-700 text-white px-6 py-2 rounded-xl text-sm font-bold shadow-lg shadow-indigo-100 transition-colors" role='button'>
+
+          <div className="flex items-center justify-between border-t border-gray-50 pt-3">
+            <div className="flex items-center gap-3">
+              <span className="px-2 py-0.5 rounded bg-indigo-50 border border-indigo-100 text-[10px] font-black text-indigo-600">✦ Beta</span>
+              <span className="text-[10px] text-gray-400 font-bold tracking-tight">Conversational Analytics</span>
+            </div>
+            <button className="bg-gray-400 hover:bg-[#C1C3D0] text-white px-8 py-2.5 rounded-xl text-xs font-extrabold transition-all shadow-sm">
               Analyze
             </button>
           </div>
         </div>
+      </div>
       </div>
 
       {/* Grid Content */}
