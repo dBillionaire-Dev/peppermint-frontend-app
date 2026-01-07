@@ -38,7 +38,7 @@ export const CardStack: React.FC = () => {
             </div>
             
             <div className="flex-1 overflow-y-auto pr-2 custom-scrollbar">
-              <h4 className="text-lg font-semibold text-gray-700 mb-3">Commodo consequat</h4>
+              <h4 className="text-lg font-semibold text-gray-700 mb-3">Actionable Insight</h4>
               <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
                 {card.content}
               </p>

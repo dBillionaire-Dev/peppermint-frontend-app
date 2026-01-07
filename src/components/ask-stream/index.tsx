@@ -139,7 +139,7 @@ export const Dashboard: React.FC = () => {
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              <div className="lg:col-span-2 space-y-6">
+              <div className="lg:col-span-3 space-y-6">
                 <MetricsGrid />
                 <div className="bg-indigo-600 rounded-3xl p-8 text-white shadow-xl shadow-indigo-200 relative overflow-hidden group">
                   <div className="absolute top-0 right-0 p-10 opacity-10 group-hover:scale-110 transition-transform">
@@ -154,9 +154,10 @@ export const Dashboard: React.FC = () => {
                   </button>
                 </div>
               </div>
-              <div className="lg:col-span-1">
+              <div className="lg:col-span-3">
                 <InteractiveMap />
               </div>
+              
             </div>
           </div>
         </div>

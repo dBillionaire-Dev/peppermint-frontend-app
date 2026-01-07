@@ -5,7 +5,7 @@ export const METRICS: Metric[] = [
   { label: 'Total Users', value: '2.5k', trend: 'up', percentage: '12%', progress: 78 },
   { label: 'Avg Session', value: '4m 32s', trend: 'up', percentage: '5%', progress: 65 },
   { label: 'Bounce Rate', value: '42.3%', trend: 'down', percentage: '2%', progress: 24 },
-  { label: 'Success', value: '88%', trend: 'up', percentage: '8%', progress: 60 },
+  { label: 'Success Rate', value: '88%', trend: 'up', percentage: '8%', progress: 60 },
 ];
 
 export const DATA_SOURCES: DataSource[] = [
@@ -15,11 +15,13 @@ export const DATA_SOURCES: DataSource[] = [
 ];
 
 export const LOCATIONS: LocationData[] = [
-  { id: '1', city: 'Lagos', coords: [6.5244, 3.3792], value: 85 },        // West Africa
-  { id: '2', city: 'Nairobi', coords: [-1.2921, 36.8219], value: 92 },  // East Africa
-  { id: '3', city: 'Cairo', coords: [30.0444, 31.2357], value: 78 },    // North Africa
-  { id: '4', city: 'Cape Town', coords: [-33.9249, 18.4241], value: 64 } // Southern Africa
+  { id: '1', city: 'New York', coords: [40.7128, -74.0060], value: 85 },     // North America
+  { id: '2', city: 'London', coords: [51.5074, -0.1278], value: 92 },        // Europe
+  { id: '3', city: 'Lagos', coords: [6.5244, 3.3792], value: 85 }, //  Africa
+  { id: '4', city: 'Tokyo', coords: [35.6895, 139.6917], value: 78 },        // Asia
+  { id: '5', city: 'Sydney', coords: [-33.8688, 151.2093], value: 64 }       // Australia
 ];
+
 
 
 export const STACK_CARDS: CardData[] = [
