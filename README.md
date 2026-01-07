@@ -1,8 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# STREAMS AI Dashboard
+
+A modern **Next.js** frontend application for the Peppermint frontend assesment. This app is designed to provide a sleek user interface and seamless experience.
+
+Live Demo: [https://www.nezer-peppermint-frontend.vercel.app/](https://www.nezer-peppermint-frontend.vercel.app/)
+
+---
+
+## Features
+
+- Built with **Next.js** and **TypeScript**
+- Responsive design for all screen sizes
+- Fast, client-side rendering and optimized performance
+- Ready for API integration
+- Easy to customize and extend
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Make sure you have **Node.js** installed (v16+ recommended).
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/dBillionaire-Dev/peppermint-frontend-app.git
+cd peppermint-frontend-app
+````
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### Running the App
+
+Start the development server:
 
 ```bash
 npm run dev
@@ -10,31 +51,45 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* `pages/` – Contains Next.js pages
+* `pages/api/` – API routes
+* `public/` – Static assets (images, icons, etc.)
+* `components/` – Reusable React components
+* `styles/` – CSS and global styles
+* `next.config.js` – Next.js configuration
+* `tsconfig.json` – TypeScript configuration
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+This app is hosted on **Vercel**. You can deploy your own version by connecting your GitHub repo to Vercel.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Check the deployment documentation here: [Next.js Deployment Docs](https://nextjs.org/docs/deployment)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Commit your changes: `git commit -m "Add your feature"`
+4. Push to the branch: `git push origin feature/your-feature`
+5. Create a Pull Request
+
+---
+
+## Contact
+
+For questions or suggestions, reach out via GitHub.
+
