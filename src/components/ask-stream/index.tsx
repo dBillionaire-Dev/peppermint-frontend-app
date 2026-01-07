@@ -125,7 +125,7 @@ export const Dashboard: React.FC = () => {
             </div>
           </div>
         </div>
-          {/* Demographic Section (Assessment Priority) */}
+          {/* Demographic Section  */}
           <div className="space-y-6 pt-10 border-t border-gray-200">
             <div className="flex justify-between items-end">
               <div>
