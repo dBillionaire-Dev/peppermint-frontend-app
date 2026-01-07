@@ -11,7 +11,7 @@ export interface DataSource {
   id: string;
   name: string;
   date: string;
-  avatar: string;
+  description: string;
 }
 
 export interface LocationData {

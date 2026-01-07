@@ -54,9 +54,9 @@ export const Dashboard: React.FC = () => {
         {/* Sidebar Mini - Bookmarks & History */}
         <div className="lg:col-span-3 space-y-8 border-r border-gray-200 pt-3">
           <div>
-            <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Bookmarks</h3>
+            <h3 className="text-xs font-bold text-gray-400 tracking-widest mb-4">Bookmarks</h3>
             <ul className="space-y-4">
-              <li className="text-sm font-medium text-indigo-600 hover:underline cursor-pointer">Why is sentiment dropping this...</li>
+              <li className="text-sm font-medium bg-indigo-50 py-2 hover:underline cursor-pointer">Why is sentiment dropping this...</li>
               <li className="text-sm font-medium text-gray-500 hover:text-gray-800 cursor-pointer">What do people dislike about...</li>
             </ul>
           </div>
@@ -85,8 +85,8 @@ export const Dashboard: React.FC = () => {
         <div className="lg:col-span-9 space-y-8 bg-white rounded-2xl p-8 border border-gray-100 shadow-sm min-h-[320px]">
           
           {/* Section 1 & 2 Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+            <div className="space-y-4 md:border-r border-gray-100">
               <h2 className="text-xl font-bold text-gray-800">Section 1</h2>
               <div>
                 <h3 className="text-xl font-bold text-gray-800 mb-6 leading-tight">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia</h3>
@@ -106,8 +106,8 @@ export const Dashboard: React.FC = () => {
           </div>
 
           {/* Section 3 & Data Source Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-             <div className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:border-t border-gray-100">
+             <div className="space-y-4 md:border-r border-gray-100">
               <h2 className="text-xl font-bold text-gray-800">Section 3</h2>
               <div>
                 <h3 className="text-lg font-bold text-gray-800 mb-3">Commodo consequat</h3>
@@ -117,24 +117,32 @@ export const Dashboard: React.FC = () => {
               </div>
             </div>
 
-            <div className="space-y-4">
-              <div className="flex justify-between items-center">
-                <h2 className="text-xl font-bold text-gray-800">Data Source</h2>
-                <span className="text-xs font-bold text-gray-400 flex items-center cursor-pointer">All <Icon name="chevron-right" className="w-3 h-3 ml-1" /></span>
-              </div>
-              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+            <div className="bg-white md:p-12">
+             <div className="flex items-center justify-between mb-12">
+               <h4 className="text-[14px] font-bold text-indigo-900/30 tracking-[0.2em]">Data Source</h4>
+               <span className="text-[12px] font-black text-gray-400 flex items-center gap-1 cursor-pointer hover:text-gray-600 transition-colors">All ▼</span>
+             </div>
+             <div className="space-y-8">
                 {DATA_SOURCES.map((source, i) => (
-                  <div key={source.id} className={`flex items-center p-4 hover:bg-gray-50 transition-colors cursor-pointer ${i !== DATA_SOURCES.length - 1 ? 'border-b border-gray-50' : ''}`}>
-                    <img src={source.avatar} className="w-10 h-10 rounded-xl shadow-sm mr-4" alt={source.name} />
-                    <div className="flex-1">
-                      <p className="text-sm font-bold text-gray-800">{source.name}</p>
-                      <p className="text-[11px] text-gray-400 font-medium">{source.date}</p>
+                  <div key={source.id} className="flex gap-5 group cursor-pointer">
+                    <div className="flex-1 min-w-0 border-b border-gray-50 pb-4 group-last:border-none">
+                      <div className="flex items-center justify-between mb-2">
+                        <h5 className="text-sm font-medium text-gray-500 group-hover:text-indigo-600 transition-colors">{source.name}</h5>
+                        <div className="flex items-center gap-3">
+                           <span className="text-[12px] text-gray-400 font-semi-bold tracking-widest">{source.date}</span>
+                           <span className="text-gray-200 opacity-60">
+                             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                           </span>
+                        </div>
+                      </div>
+                      <p className="text-[11px] text-gray-400 font-medium leading-relaxed line-clamp-1 group-hover:text-gray-500">
+                        {source.description}
+                      </p>
                     </div>
-                    <Icon name="database" className="w-4 h-4 text-gray-200" />
                   </div>
                 ))}
-              </div>
-            </div>
+             </div>
+          </div>
           </div>
         </div>
           {/* Demographic Section  */}

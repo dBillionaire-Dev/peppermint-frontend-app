@@ -9,9 +9,9 @@ export const METRICS: Metric[] = [
 ];
 
 export const DATA_SOURCES: DataSource[] = [
-  { id: '1', name: 'Sandra Bassey', date: 'January 05, 2026', avatar: 'https://picsum.photos/32/32?random=1' },
-  { id: '2', name: 'John Ugwu', date: 'January 05, 2026', avatar: 'https://picsum.photos/32/32?random=2' },
-  { id: '3', name: 'Matthew Olamide', date: 'January 05, 2026', avatar: 'https://picsum.photos/32/32?random=3' },
+  { id: '1', name: 'Sandra Bassey', date: 'November 20, 2025', description: 'Lorem ipsum ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat' },
+  { id: '2', name: 'John Ugwu', date: 'December 18, 2025', description: 'Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
+  { id: '3', name: 'Matthew Olamide', date: 'January 05, 2026', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
 ];
 
 export const LOCATIONS: LocationData[] = [
