@@ -12,7 +12,11 @@ export const Dashboard: React.FC = () => {
       {/* Header Section */}
       <div className="flex flex-col lg:items-center justify-between md:justify-center gap-20  border-b border-gray-200 lg:pb-15 mb-0 min-h-[80vh]">
         <div className='lg:pt-15 lg:pr-70'>
-          <h1 className="text-5xl lg:text-7xl font-bold text-indigo-600 tracking-tight leading-none mb-2">Ask Stream</h1>
+          <h1 className="text-5xl lg:text-7xl font-bold tracking-tight leading-none mb-2 
+               bg-linear-to-r from-indigo-500 via-indigo-800 to-indigo-950 
+               bg-clip-text text-transparent">
+            Ask Stream
+          </h1>
           <p className="text-4xl lg:text-6xl font-bold text-gray-300">lorem ipsum</p>
         </div>
         
