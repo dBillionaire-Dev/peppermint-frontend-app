@@ -2,7 +2,7 @@
 
 A modern **Next.js** frontend application for the Peppermint frontend assesment. This app is designed to provide a sleek user interface and seamless experience.
 
-Live Demo: [https://www.nezer-peppermint-frontend.vercel.app/](https://www.nezer-peppermint-frontend.vercel.app/)
+Live Demo: [https://nezer-peppermint-frontend.vercel.app/](https://nezer-peppermint-frontend.vercel.app/)
 
 ---
 
